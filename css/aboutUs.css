@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#limg {
+    
+    margin: 20px;
+}
+.about-hero {
+    height: 90vh;
+    /*image reference: https://unsplash.com/photos/bkdPrItKrrY*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_large.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+p span {
+    padding-top: 5px;
+    display: block;
+    color: #ad8762;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20px 50px;
+    float: right;
+}
+
+.nav-logo img {
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    padding-left: 20px
+}
+
+.nav-links ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px white;
+    transition: 0.5s linear;
+
+}
+
+nav li a:after {
+    content: "";
+    display: block;
+    height: 5px;
+    border-bottom: 2px solid white;
+    margin: 0 50%;
+    transition: margin 0.5s ease-out;
+}
+
+nav li a:hover::after {
+    margin: 0 0%;
+    transition: margin 0.5s ease-out;
+}
+.banner {
+    margin: 200px 150px;
+    color: #ad8762;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 130px;
+}
+
+h2  {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+p {
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+    margin: 20px 10px;
+}
+
+#about-one,
+#about-two,
+#about-three,
+#about-four,
+#about-five,
+#about-six {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0px;
+}
+
+#about-image,
+#about-text,
+#about-image-two,
+#about-text-two,
+#about-image-three,
+#about-text-three,
+#about-image-four,
+#about-text-four,
+#about-image-five,
+#about-text-five,
+#about-image-six,
+#about-text-six {
+    width: 50%;
+}
+
+#about-image img {
+    width: 98%;
+    height: auto;
+}
+
+#about-image-two img,
+#about-image-three img,
+#about-image-four img,
+#about-image-five img,
+#about-image-six img {
+    width: 98%;
+    height: auto;
+}
+
+#about-text h2 {
+    margin: 0;
+    color: #593120;
+}
+
+#about-text-two h2,
+#about-text-three h2,
+#about-text-four h2,
+#about-text-five h2,
+#about-text-six h2 {
+    margin: 0;
+    color: #593120;
+}
+
+#about-text-two, #about-text-four, #about-text-six,
+ #about-image-three img, #about-image-five img{
+    margin-right: 10px;
+}
+#about-text, #about-text-three,#about-text-five,
+#about-image-two img, #about-image-four img, #about-image-six img{
+    margin-left: 10px;
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    display: grid;
+}
+
+.about-row {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.about-row img {
+    width: 100%;
+    border-radius: 10px;
+}
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #593120;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    color: honeydew;
+    background-color:#593120;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    color: #C2B280;   
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000;
+    transition: all 1s ease;
+}
+
+footer li a:hover{
+    text-shadow: 1px 1px 8px #C2B280;
+    
+}
+
+footer li a:after{
+    content: "";
+    display: block;
+    height: 5px;
+   
+    transition: margin 1s ease-out;
+}
+
+footer li a:hover::after {
+    margin: 0 0%;
+    transition: margin 1s ease-out;
+}
+nav .fa{
+    display: none;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0%;
+    margin-bottom: 80px;   
+ 
+}
+
+h1{
+    margin:40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .fa {
+    display: none;
+}
+
+#logofooter {
+    margin: 10px;
+    margin-left: 0px;
+    width: 80%;
+}
+
+#about-main{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+#about-two-mobile,#about-four-mobile,#about-six-mobile{
+    display: none;
+}
+#footeraddress{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #C2B280;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+    color: #C2B280;
+}
+
+@media (max-width:768px) {
+    #mobile {
+        display: inline;
+        color: rgb(125, 197, 221);
+    }
+    
+    #desktop {
+        display: none;
+    }
+    #footeraddress{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-col .social-links{
+        margin-left: 10px;
+    }
+    .about-hero {
+        height: 90vh;
+        /*image reference: https://www.pexels.com/photo/afternoon-architecture-chairs-contemporary-271815/*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_small.jpg);
+        width: 100%;
+        height: 480px;
+    }
+
+    .banner {        
+        display: none;
+    }
+
+    p {
+        margin:0px;
+        margin-bottom: 0;
+    }
+    .footer-col .social-links{
+        margin-left:10px ;
+    }
+    #logofooter {
+        margin-top: 17px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 0;
+        width: 40%;
+    }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+
+    }
+
+    .footer-col ul {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .footer-col ul li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    .footer-col ul li a {
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s ease;
+        color: #C2B280;
+    }
+
+    #limg {
+        width: 200px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #ad8762;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-size: 18px;
+        transition: 1s;
+    }
+
+    .nav-links ul li {
+        display: block;
+
+    }
+
+    .nav-links ul a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+    
+    #about-one,
+    #about-two,
+    #about-three,
+    #about-four,
+    #about-five,
+    #about-six {
+        margin-top: 40px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #about-image,
+    #about-text,
+    #about-image-two,
+    #about-text-two,
+    #about-text-three,
+    #about-image-three {
+        width: 90%;
+        margin: auto;
+    }
+
+    #about-image-four,
+    #about-text-four,
+    #about-image-five,
+    #about-text-five,
+    #about-image-six,
+    #about-text-six {
+        width: 90%;
+        margin: auto;
+    }
+    #about-two,#about-four,#about-six{
+        display: none;
+    }
+    #about-two-mobile,#about-four-mobile,#about-six-mobile{        
+        margin-top: 40px;
+        display: block;
+    }
+        
+    #about-text h2,
+    #about-text-two h2,
+    #about-text-three h2,
+    #about-text-four h2,
+    #about-text-five h2,
+    #about-text-six h2 {
+        margin-top:10px;
+        color: #593120;
+        margin-bottom: 10px;
+    }
+
+    #about-image img, #about-image-two img,
+    #about-image-three img,
+    #about-image-four img,
+    #about-image-five img,
+    #about-image-six img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #about-image-two img, #about-image-four img, #about-image-six img{
+        margin-left: 0;
+    }
+}

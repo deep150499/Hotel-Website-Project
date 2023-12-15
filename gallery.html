@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Casa De Ocio - Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header, Banner & Navigation-->
+    <header>
+        <div class="gallery-hero">
+            <nav>
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <!-- logo created in photoshop -->
+                        <img src="images/LogoW.png" alt="Casa De Ocio logo" id="limg">
+                    </div>
+
+                    <div class="nav-links" id="navLinks">
+                        <div class="fa fa-times" onclick="closeMenu()"></div>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="fa fa-bars" onclick="showMenu()"></div>
+                </div>
+            </nav>
+
+            <div class="banner">
+                <h1>GALLERY</h1>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Body-->
+    <main id="section_main">
+        <div id="div_reception">
+            <h2>RECEPTION AREA</h2>
+            <div id="img_reception">
+                <!--IMAGE SOURCE FOR ALL IMAGES : http://prominenthotels.in/media-gallery/-->
+                <img src="images/recep1.jpg" width="100%" height="auto" alt="image 1 for reception area">
+                <img src="images/recep2.jpg" width="100%" height="auto" alt="image 2 for reception area">
+                <img src="images/recep3.jpg" width="100%" height="auto" alt="image 3 for reception area">
+            </div>
+        </div>
+
+        <div id="div_sdo">
+            <h2>SINGLE & DOUBLE OCCUPANCY ROOMS</h2>
+            <div id="div_sdo1">
+                <!--IMAGE SOURCE FOR ALL IMAGES : http://prominenthotels.in/media-gallery/-->
+                <img src="images/sdo1.jpg" width="100%" height="auto"
+                    alt="image 1 for single and double occupancy rooms">
+                <img src="images/sdo2.jpg" width="100%" height="auto"
+                    alt="image 2 for single and double occupancy rooms">
+                <img src="images/sdo3.jpg" width="100%" height="auto"
+                    alt="image 3 for single and double occupancy rooms">
+            </div>
+
+            <div id="div_sdo2">
+                <!--IMAGE SOURCE FOR ALL IMAGES : http://prominenthotels.in/media-gallery/-->
+                <img src="images/sdo4.jpg" width="100%" height="auto"
+                    alt="image 4 for single and double occupancy rooms">
+                <img src="images/sdo5.jpg" width="100%" height="auto"
+                    alt="image 5 for single and double occupancy rooms">
+                <img src="images/sdo6.jpg" width="100%" height="auto"
+                    alt="image 6 for single and double occupancy rooms">
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <!-- logo created in photoshop -->
+                    <img id="logofooter" src="images/LogoW.png" alt="Casa De Ocio logo">
+                    <p id="footeraddress">Via Serlas 27, 7500 St. Moritz, Switzerland</p>
+                    <p id="footeraddress"> Direct Line: <a id="mobile" href="tel:+41-12-555-5555">+41-12-555-5555</a>
+                        <span id="desktop">+41-12-555-5555</span>
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Extras</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socialize</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <div class="fab fa-facebook-f"></div>
+                        </a>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <div class="fab fa-twitter"></div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <div class="fab fa-instagram"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">Copyright &copy; 2021 Casa De Ocio. All Rights Reserved.</div>
+    </footer>
+
+
+    <!--JavaScript for the Responsive Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function closeMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

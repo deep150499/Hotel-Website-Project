@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casa De Ocio - Homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header, Banner & Navigation-->
+    <header>
+        <div class="about-hero">
+            <nav>
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <!-- logo created in photoshop -->
+                        <img src="images/LogoW.png" alt="Casa De Ocio logo" id="limg">
+                    </div>
+
+                    <div class="nav-links" id="navLinks">
+                        <div class="fa fa-times" onclick="closeMenu()"></div>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="fa fa-bars" onclick="showMenu()"></div>
+                </div>
+            </nav>
+
+            <div class="banner">
+                <h2>WELCOME TO </h2>
+                <h1>casa de ocio</h1>
+                <h2>LEISURE HOME</h2>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!--Main Body-->
+    <main>
+
+        <!--Booking Section-->
+        <section class="booking">
+            <div class="container">
+                <form action="" class="form">
+                    <div class="input-group">
+                        <label for="check-in" class="input-label">Check In</label>
+                        <input type="date" class="input" id="check-in">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="check-out" class="input-label">Check Out</label>
+                        <input type="date" class="input" id="check-out">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rooms" class="input-label">Rooms</label>
+                        <select class="options" id="rooms">
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
+                            <option value="0">4</option>
+                            <option value="0">5</option>
+                            <option value="0">6</option>
+                            <option value="0">7</option>
+                            <option value="0">8</option>
+                            <option value="0">9</option>
+                            <option value="0">10</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Adults</label>
+                        <select class="options" id="adults">
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
+                            <option value="0">4</option>
+                            <option value="0">5</option>
+                            <option value="0">6</option>
+                            <option value="0">7</option>
+                            <option value="0">8</option>
+                            <option value="0">9</option>
+                            <option value="0">10</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="children" class="input-label">Children</label>
+                        <select class="options" id="children">
+                            <option value="0">0</option>
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
+                            <option value="0">4</option>
+                            <option value="0">5</option>
+                            <option value="0">6</option>
+                            <option value="0">7</option>
+                            <option value="0">8</option>
+                            <option value="0">9</option>
+                            <option value="0">10</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="special-rate" class="input-label">Special Rate</label>
+                        <select class="options" id="special-rate">
+                            <option value="Best Available">Best Available</option>
+                            <option value="AAA/CAA">AAA/CAA</option>
+                            <option value="Reward-points">Reward Points</option>
+                            <option value="government/military">Government/Military</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="form-btn btn-brown">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <h1>OFFERS</h1>
+
+        <section id="wrapper">
+
+            <section id="offer1">
+                <!-- image reference : https://www.pexels.com/photo/people-taking-photo-front-of-green-tree-1835926/ -->
+                <img src="images/family.jpg" alt="Offer3- Family">
+                <h3>
+                    STAYCATIONS FOR FAMILY
+                </h3>
+                <p>
+                    Make memories of lifetime with fun-filled staycations and enjoy our exquisite stay. We provide daily
+                    breakfast options and access to Kids Suite.
+                </p>
+            </section>
+
+            <section id="offer2">
+                <!-- image reference : https://www.pexels.com/photo/man-and-woman-sitting-on-chair-4255482/ -->
+                <img src="images/couple.jpg" alt="Offer3- Couples">
+                <h3>
+                    STAYCATIONS FOR COUPLES
+                </h3>
+                <p>
+                    Weather you seek a romantic gateway or a carefree day to celebrate a special ocassion, we offer the
+                    perfect setting with delectable dining options and spa.
+                </p>
+            </section>
+
+            <section id="offer3">
+                <!-- image reference : https://www.pexels.com/photo/women-sitting-on-green-grass-field-4833957/ -->
+                <img src="images/friends.jpg" alt="Offer3- Friends">
+                <h3>
+                    STAYCATIONS FOR FRIENDS
+                </h3>
+                <p>
+                    Spend a night out and embark on a unique adventure with friends and family. Reconnect during a
+                    fun-filled day as you enjoy drinks and bites. Enjoy a visit to the Cinema Suite for a private movie
+                    screening, or relax by the pool.
+                </p>
+            </section>
+        </section>
+
+        <section id="club_main">
+            <div id="club_first">
+                <div id="club_first_image">
+                    <!-- image referene: https://www.pexels.com/photo/utensils-on-brown-wooden-table-2287523/ -->
+                    <img src="images/club_1.jpg" alt="Club1- Club Privilages" height="100" width="100">
+                </div>
+                <div id="club_first_text">
+                    <h2>CLUB PRIVILEGES</h2>
+                    <p>
+                        Enjoy the following amenities as part of this experience: private registration for arrival and
+                        departure, express check-out service, breakfast buffet, all-day refreshments, evening cocktails
+                        and canapés.
+                    </p>
+                </div>
+            </div>
+
+            <div id="club_second_desktop">
+                <div id="club_second_text">
+                    <h2>BUTLER SERVICES</h2>
+                    <p>
+                        Savor the superior comfort and privacy accorded by us, along with the attentiveness of our Club
+                        butlers, famed for their service with poise</p>
+                </div>
+                <div id="club_second_image">
+                    <!-- image reference: https://www.pexels.com/photo/man-in-black-suit-standing-near-black-wooden-table-5371676/ -->
+                    <img src="images/club_2.jpg" alt="Club2- Butler Service" height="100" width="100">
+                </div>
+            </div>
+
+            <div id="club_second_mobile">
+                <div id="club_second_image">
+                    <!-- image reference: https://www.pexels.com/photo/man-in-black-suit-standing-near-black-wooden-table-5371676/ -->
+                    <img src="images/club_2.jpg" alt="Club2- Butler Service(mobile)" height="100" width="100">
+                </div>
+                <div id="club_second_text">
+                    <h2>BUTLER SERVICES</h2>
+                    <p>
+                        Savor the superior comfort and privacy accorded by us, along with the attentiveness of our Club
+                        butlers, famed for their service with poise.
+                    </p>
+                </div>
+            </div>
+
+            <div id="club_third">
+                <div id="club_third_image">
+                    <!-- image reference: https://unsplash.com/photos/ycpKEhngRfI -->
+                    <img src="images/club_3.jpg" alt="Club3- Food and Beverages" height="100" width="100">
+                </div>
+                <div id="club_third_text">
+                    <h2>FOOD AND BEVERAGE OFFERINGS</h2>
+                    <p>
+                        A breakfast buffet, all-day refreshments, afternoon tea, premium bar service and hors d’oeuvres
+                        are served daily.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Reviews Section-->
+        <section id="Reviews">
+            <div class="heading">
+                <h1>GUESTS REVIEWS</h1>
+            </div>
+
+            <div class="review-container">
+                <!--1st Review-->
+
+                <div class="review-box">
+                    <div class="top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <!-- image refernce: https://unsplash.com/photos/8Hpn00vmKwo -->
+                                <img src="images/first-guest.jpg" alt="Guest1- profile image">
+                            </div>
+                            <div class="name-user">
+                                <div>Kaffy Ben</div>
+                                <span>@kaffyben</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                        </div>
+                    </div>
+
+                    <div class="guest-review">
+                        <p>Very nice and looks beautiful.
+                            The services are up-to standard and comfortable life available to life in Casa De Ocio hotel
+                        </p>
+                    </div>
+                </div>
+                <!--2nd Review-->
+                <div class="review-box">
+                    <div class="top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <!-- image reference: https://unsplash.com/photos/d9YXhgFAmIQ -->
+                                <img src="images/second-guest.jpg" alt="Guest2- profile image">
+                            </div>
+                            <div class="name-user">
+                                <div>Anonymous</div>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star-o"></div>
+                        </div>
+                    </div>
+
+                    <div class="guest-review">
+                        <p>Awesome place and I had a nice stay. All amenties were great and the front desk lady was very
+                            friendly and helpful</p>
+                    </div>
+                </div>
+                <!--3rd Review-->
+
+                <div class="review-box">
+                    <div class="top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <!-- image reference: https://unsplash.com/photos/Me-MSv_dUNU-->
+                                <img src="images/third-guest.jpg" alt="Guest3- profile image">
+                            </div>
+                            <div class="name-user">
+                                <div>Maya Ann</div>
+                                <span>@mayann</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star"></div>
+                            <div class="fa fa-star-o"></div>
+                            <div class="fa fa-star-o"></div>
+                        </div>
+                    </div>
+
+                    <div class="guest-review">
+                        <p>Please improve your food and room service. The internet was awesome but room service was not
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Email Section-->
+        <div class="email">
+            <div class="email_content">
+                <h1>Sign Up for E-Newsletter</h1>
+                <p>If you would like to receive regular information and our latest special offers from us at <span>The
+                        CASA DE OCIO</span>, simply provide your contact information to ensure you receive the most up
+                    to date information from us.
+                </p>
+                <form action="#" name="myHomeForm">
+                    <div class="form_wrap">
+                        <label for="email">
+                            <input type="email" placeholder="Enter your email" id="email">
+                        </label>
+                        <button class="signup_button" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <!-- logo created in photoshop -->
+                    <img id="logofooter" src="images/LogoW.png" alt="Casa De Ocio Logo">
+                    <p id="footeraddress">Via Serlas 27, 7500 St. Moritz, Switzerland</p>
+                    <p id="footeraddress"> Direct Line: <a id="mobile" href="tel:+41-12-555-5555">+41-12-555-5555</a>
+                        <span id="desktop">+41-12-555-5555</span>
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Extras</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socialize</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <div class="fab fa-facebook-f"></div>
+                        </a>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <div class="fab fa-twitter"></div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <div class="fab fa-instagram"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">Group 2 &#169;2021. All rights reserved</div>
+    </footer>
+
+
+    <!--JavaScript for the Responsive Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function closeMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

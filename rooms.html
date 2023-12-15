@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casa De Ocio - Rooms</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/rooms.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/rooms.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header, Banner & Navigation-->
+    <header>
+        <div class="tarrif-hero">
+            <nav>
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <!-- logo created in photoshop -->
+                        <img src="images/LogoW.png" alt="Casa De Ocio logo" id="limg">
+                    </div>
+
+                    <div class="nav-links" id="navLinks">
+                        <div class="fa fa-times" onclick="closeMenu()"></div>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="fa fa-bars" onclick="showMenu()"></div>
+                </div>
+            </nav>
+
+            <div class="banner">
+                <h1>ROOMS</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Main Body-->
+    <main id="tarrif_section_main">
+        <div class="container_animation">
+            <div class="panel">
+                <div class="panel-inner">
+                    <div class="panel-front">
+                        <p>C</p>
+                    </div>
+                    <div class="panel-back">
+                        <p>O</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-inner">
+                    <div class="panel-front">
+                        <p>A</p>
+                    </div>
+                    <div class="panel-back">
+                        <p>C</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-inner">
+                    <div class="panel-front">
+                        <p>S</p>
+                    </div>
+                    <div class="panel-back">
+                        <p>I</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-inner">
+                    <div class="panel-front">
+                        <p>A</p>
+                    </div>
+                    <div class="panel-back">
+                        <p>O</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="table_container">
+            <p id="tarrif-desc">
+                Enjoy great value on suites when you stay for 2 night and more. Get 50% savings on second night and 25%
+                savings on every additional night. Get the best of our suites with daily breakfast, CASA DE OCIO Club
+                access wherever available, special suite amenities and more..
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Code</th>
+                        <th>Room type</th>
+                        <th>Guest Allowed</th>
+                        <th>Meal</th>
+                        <th>Rates (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Single Bed</td>
+                        <td>01-Adults</td>
+                        <td>B</td>
+                        <td>1000<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>121</td>
+                        <td>Double Bed</td>
+                        <td>02-Adults</td>
+                        <td>B - D</td>
+                        <td>2100<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>331</td>
+                        <td>King Bed</td>
+                        <td>02-Adults + 01-Child (Below 12 Years)</td>
+                        <td>B - L - D</td>
+                        <td>4000<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>441</td>
+                        <td>Honeymoon Suite</td>
+                        <td>02-Adults</td>
+                        <td>B - L - D with Midnight cake</td>
+                        <td>7000<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>551</td>
+                        <td>Silver Room with Breakfast</td>
+                        <td>02-Adults + 02-Child (Below 12 Years)</td>
+                        <td>B - L</td>
+                        <td>2200<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>661</td>
+                        <td>Gold Room with Breakfast</td>
+                        <td>02-Adults</td>
+                        <td>B - L - D with Drinks</td>
+                        <td>3000<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>771</td>
+                        <td>Executive Suite 1 Bedroom Lake View</td>
+                        <td>02-Adults</td>
+                        <td>B - L - D with Drinks</td>
+                        <td>5000<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                    <tr>
+                        <td>881</td>
+                        <td>Deluxe Room</td>
+                        <td>03-Adults</td>
+                        <td>B - L - D with Drinks</td>
+                        <td>6500<span id="includes">*</span> Starting Rate/Night</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="desc_short_form">
+            <span id="includes">*</span> Includes Breakfast, Lunch and Dinner
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <!-- logo created in photoshop -->
+                    <img id="logofooter" src="images/LogoW.png" alt="Casa De Ocio logo">
+                    <p id="footeraddress">Via Serlas 27, 7500 St. Moritz, Switzerland</p>
+                    <p id="footeraddress"> Direct Line: <a id="mobile" href="tel:+41-12-555-5555">+41-12-555-5555</a>
+                        <span id="desktop">+41-12-555-5555</span>
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Extras</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socialize</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <div class="fab fa-facebook-f"></div>
+                        </a>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <div class="fab fa-twitter"></div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <div class="fab fa-instagram"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">Group 2 &#169;2021. All rights reserved</div>
+    </footer>
+
+
+    <!--JavaScript for the Responsive Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function closeMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

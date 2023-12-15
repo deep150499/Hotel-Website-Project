@@ -1,0 +1,580 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;    
+    font-family: 'Montserrat', sans-serif;
+}
+
+#limg {
+    
+    margin: 20px;
+}
+
+.about-hero {
+    height: 90vh;
+    /* image reference: https://www.pexels.com/photo/man-standing-in-front-of-front-desk-3215519/ */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/reception.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20px 50px;
+    float: right;
+}
+
+.nav-logo img {
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    padding-left: 20px
+}
+
+.nav-links ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px white;
+    transition: 0.5s linear;
+
+}
+
+nav li a:after {
+    content: "";
+    display: block;
+    height: 5px;
+    border-bottom: 2px solid white;
+    margin: 0 50%;
+    transition: margin 0.5s ease-out;
+}
+
+nav li a:hover::after {
+    margin: 0 0%;
+    transition: margin 0.5s ease-out;
+}
+.banner {
+    margin: 200px 150px;
+    color: #ad8762;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 130px;
+}
+
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    display: grid;
+}
+
+.about-row{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.about-row img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #593120;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+#information ul{
+    margin-top: 0;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color:#593120;
+    padding: 5px 0;
+    font-size: 14px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+    position: relative;
+    color : honeydew
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    color: #C2B280;
+    
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000;
+    transition: all 1s ease;
+}
+
+footer li a:hover{
+    text-shadow: 1px 1px 8px #C2B280;    
+}
+
+footer li a:after{
+    content: "";
+    display: block;
+    height: 5px;
+   
+    transition: margin 1s ease-out;
+}
+
+footer li a:hover::after {
+    margin: 0 0%;
+    transition: margin 1s ease-out;
+}
+nav .fa{
+    display: none;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0%;
+    margin-bottom: 70px;    
+}
+
+h1{
+    margin:40px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+form {
+    width: 85%;
+    border-radius: 5px;
+    background-color:#ad8762;
+    margin:auto;
+    margin-top: 0px;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0PX 0PX 5px silver;
+    margin-left: 10%;
+    grid-column: 1/2;
+    animation: formMove 4s ease;
+}
+
+
+
+@keyframes formMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+#information{
+    border-radius: 5px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 10%;
+    width: 85%;
+    grid-column: 2/3;
+    animation: DetailsMove 6s ease;    
+}
+
+@keyframes DetailsMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#information li{
+    margin: 00px 10px;
+}
+label {
+    width: 25%;
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+label+* {
+    width: 75%;
+    margin: 10px 0px;
+    border: 2px solid #e4dfdc;
+    border-radius: 3px;
+ 
+}
+input[type='submit'] {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 7em;
+    height: 2em;
+    clear: both;
+    border-radius: 5px;
+    background-color: #ad8762;
+    color: #ffffff;
+}
+
+form input[type="text"], form input[type="email"] {
+    outline: none;
+    height: 25px;
+}
+
+form *:focus{
+    outline: none;
+    box-shadow:  1px 1px 5px rgb(160, 160, 158);
+}
+#contact-desc {      
+    color: rgb(95, 95, 95);
+    width: 90%;
+    margin: auto; 
+    margin-bottom: 30px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+#logofooter{
+    margin: 10px;
+    margin-left: 0px;
+    width: 80%;
+}
+#information p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#information a{
+    color: rgb(84, 84, 214);
+}
+#footeraddress{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #C2B280;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#maps_contact{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width:768px) {
+    #mobile {
+        display: inline;
+        color: rgb(125, 197, 221);
+    }
+    
+    #desktop {
+        display: none;
+    }
+    #footeraddress{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .about-hero { 
+        /* image reference: https://www.pexels.com/photo/people-at-a-reception-area-of-hotel-5378703/ */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/reception.jpeg);
+        width: 100%;  
+        height: 480px;  
+    }
+       
+    h1{
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+        
+    /*contact page*/
+    #wrapper{
+        grid-template-columns: 100%;
+    }
+    p{
+        margin: 0px;
+    }
+    #information li{
+        margin: 00px ;
+    }
+    form {
+        grid-column: 1/2;
+        width: 90%;
+        margin: auto;
+    }
+    #information{
+        width: 90%;
+        margin: auto;
+       margin-top: 40px;
+        grid-column: 1/2;
+    }
+    input[type=submit] {
+        display: block
+    }
+        
+    /*footer*/
+       
+    #logofooter {
+        margin-top: 17px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 0;
+        width: 40%;
+    }    
+
+    #fimg {
+        width: 140px;
+        height: 40px;
+        position: absolute;
+        left: -6px;
+       bottom: -920px;
+    }
+
+    #limg {
+        width: 200px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #ad8762;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-size: 18px;
+        transition: 1s;
+    }
+
+    .nav-links ul li {
+        display: block;
+
+    }
+
+    .nav-links ul a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+        
+    .banner {
+        display:none;
+    }
+    .footer-col .social-links{
+        margin-left: 10px;
+    }
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+    .footer-col{
+        width: 100%;
+    }
+   
+    .footer-col h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul  {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .footer-col ul li {
+        display: inline-block;
+        margin-left:20px ;
+        margin-right: 20px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    .footer-col ul li a {
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s ease;
+        color: #000000;
+    }
+    .footer-col .social-links{
+        margin-left: 10px;
+    }
+        
+    #maps_contact{
+        text-align: left;
+        padding-top: 18px;
+        padding-left: 0;
+    }
+    label{
+        width: 100%;
+        margin-left: 10px;
+    }
+    label+*{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
